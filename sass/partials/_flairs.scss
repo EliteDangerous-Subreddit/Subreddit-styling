@@ -1,0 +1,44 @@
+.flair {
+    height: 16px;
+    line-height: 16px;
+    vertical-align: top;
+    width: auto!important;
+}
+.flair-img {
+    text-indent: 24px;
+}
+.flair-star { @include sprites-sprite(flair-star); text-indent: 21px; }
+.flair-bot { @include sprites-sprite(flair-bot); }
+.flair-federation { @include sprites-sprite(flair-federation); }
+.flair-empire { @include sprites-sprite(flair-empire); }
+.flair-alliance { @include sprites-sprite(flair-alliance); }
+.flair-cog { @include sprites-sprite(flair-cog); }
+.flair-skull { @include sprites-sprite(flair-skull); }
+.flair-frontier { @include sprites-sprite(flair-frontier); text-indent: 40px; }
+
+.flair-cobra { @include sprites-sprite(flair-ship-cobra); }
+.flair-sidey { @include sprites-sprite(flair-ship-sidey); }
+.flair-viper { @include sprites-sprite(flair-ship-viper); }
+.flair-anaconda { @include sprites-sprite(flair-ship-anaconda); text-indent: 30px; }
+
+.flair-naturalpoint { @include sprites-sprite(flair-naturalpoint); text-indent: 21px; }
+.flair-tobii { @include sprites-sprite(flair-tobii); text-indent: 32px; }
+.flair-osvr { @include sprites-sprite(flair-osvr); text-indent: 21px; }
+
+.flair-long {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.flair-cmdr:before {
+    content: "CMDR ";
+    font-weight: bold;
+}
+.tagline .author, .res .thing .tagline .author{
+    &.moderator{
+        background: #3EC03E !important;
+        &:hover{
+            background-color: #134913 !important;
+        }
+    }
+}

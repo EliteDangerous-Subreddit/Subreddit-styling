@@ -1,0 +1,10 @@
+/* BEGIN: sticky comments */
+
+.comments-page .sitetable.nestedlisting>.thing.stickied
+{
+	border-left: solid 8px $stickied_border_color !important;
+	background-color: rgb(242, 255, 235);
+	padding: 5px;
+}
+
+/* END: sticky comments */

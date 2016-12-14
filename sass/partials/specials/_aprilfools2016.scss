@@ -1,0 +1,59 @@
+//User funstuff
+.author{
+    &:after {
+        content:"DavidBraben";
+        font-size:10px;
+    }
+    font-size:0;
+    &[href$="/ollobrains"]{
+        font-size:inherit;
+        &:after {
+            content:"";
+            font-size:inherit;
+        }
+    }
+    &[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"] {
+        font-size:inherit;
+        &:after {
+            content:"";
+            font-size:inherit;
+        }
+    }
+}
+.tagline .author{
+    &[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"] {
+        background: transparent repeating-linear-gradient(-45deg,
+            #e40303,
+            #e40303 7px,
+            #ff8c00 7px,
+            #ff8c00 14px,
+            #ffed00 14px,
+            #ffed00 21px,
+            #008026 21px,
+            #008026 28px,
+            #004dff 28px,
+            #004dff 34px,
+            #750787 34px,
+            #750787 41px
+        ) repeat scroll 0% 0% !important;
+    }
+}
+.side .author:after{
+    font-size:13px;
+}
+
+//David Braben thumbnail
+.thumbnail.self { @include sprites-sprite(selfpost-db); }
+
+//PINK EVERYWHERE
+*:hover{
+    background-color: rgba(255,0,255,0.02);
+}
+
+//Only show ollobrains in moderation bar (might not work, spectate)
+.side .spacer:nth-of-type(9) .content li{
+    display: none;
+    &:nth-child(9), &:nth-child(10){
+        display: block;
+    }
+}

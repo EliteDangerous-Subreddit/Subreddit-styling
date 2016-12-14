@@ -1,0 +1,16 @@
+// FORCE RED BACKGROUND ON REMOVED/SPAMMED POSTS (AND COMMENTS) WHEN USING RES
+// ----------------------------------------------------------
+.res .content .spam,
+.res .content .comment .spam,
+.res .content .comment .comment .spam,
+.res .content .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .comment .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .spam,
+.res .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .spam {
+	background: salmon!important;
+}

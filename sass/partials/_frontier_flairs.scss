@@ -1,0 +1,25 @@
+.tagline .author {
+	height: 16px;
+	display: inline-block;
+	line-height: 16px;
+	&.submitter, &.moderator, &[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"], &[href$="/Bo_Frontier"]{
+		color: #FFF !important;
+		padding: 0px 2px;
+		border-radius: 3px;
+		&:hover{
+			text-decoration: none !important;
+		}
+	}
+	&.submitter{
+		background: #0055DF !important;
+		&:hover{
+			background-color: #4E7EAB !important;
+		}
+	}
+	&[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"], &[href$="/Bo_Frontier"]{
+		background: #DD4848 !important;
+		&:hover{
+			background-color: #A51A1A !important;
+		}
+	}
+}

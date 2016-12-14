@@ -1,0 +1,39 @@
+@mixin rainbow-user($user_name, $focus:false) {
+    @if $focus == true {
+        .tagline .author[href$=#{$user_name}]:focus{
+        	background: transparent repeating-linear-gradient(-45deg,
+        		#e40303,
+        		#e40303 7px,
+        		#ff8c00 7px,
+        		#ff8c00 14px,
+        		#ffed00 14px,
+        		#ffed00 21px,
+        		#008026 21px,
+        		#008026 28px,
+        		#004dff 28px,
+        		#004dff 34px,
+        		#750787 34px,
+        		#750787 41px
+        	) repeat scroll 0% 0% !important;
+        }
+    }
+    @else {
+        .tagline .author[href$=#{$user_name}]{
+        	background: transparent repeating-linear-gradient(-45deg,
+        		#e40303,
+        		#e40303 7px,
+        		#ff8c00 7px,
+        		#ff8c00 14px,
+        		#ffed00 14px,
+        		#ffed00 21px,
+        		#008026 21px,
+        		#008026 28px,
+        		#004dff 28px,
+        		#004dff 34px,
+        		#750787 34px,
+        		#750787 41px
+        	) repeat scroll 0% 0% !important;
+        }
+    }
+
+}

@@ -1,0 +1,79 @@
+// Compass settings
+$sprites-sprite-dimensions: true;
+$nmvotes-sprite-dimensions: true;
+
+// Spritesheet
+$enable_nightmode_spritesheet: true;
+
+// Main colours
+$horizons_blue: #0a8bd6;
+$elite_orange: #FFA500;
+$main_color: $elite_orange;
+$sidebar_header: #EF4040; //For the h1 tags in sidebar (https://i.imgur.com/usF9iwW.png)
+$stickied_border_color: rgba(19, 142, 11, 0.52);
+
+// [](#yes), [](#no), [](#pass) - As a comment to display green, red or grey "i have voted"-text. Used in /r/EliteCouncil
+$council_votes: false;
+
+// Banner & Elite image
+$display_elite_image: true; // Elite Dangerous Euro-Caps image in middle of banner in /r/EliteDangerous
+$header_link_type: original_elite; //Choices: original_elite (TODO: Implement overwatch_style, second_bar, minimalistic)
+
+// Header
+$header_height: 150px;
+$header_padding_top: 20px;
+$header_total_height: $header_height + $header_padding_top;
+
+
+// Flairs
+$link_flair_type: right_orange; // right_orange, overwatch_style, colored_labels
+$default_link_flair_color: #5b93f6;
+$distinguish_set_flair: true; // Submission flair is called "set flair" and is coloured orange
+
+// Submission upvote
+$remove_vote_when_no_flair: true; // Removes the up- and downvote button when a submission doesn't have a flair set
+$only_remove_upvote: false; // Only removes the upvote if $remove_vote_when_no_flair is enabled
+
+// Post listing
+$stickied_promotion_post_gap: 7px; // The gap between sponsored, stickied, and normal submissions in post listing
+$border_color: #e2e2e2;
+
+/////// Sidebar
+$sidebar_width: 300px; // TODO: Not yet implemented everywhere needed
+
+// Message log - The bar visible above submissions.
+$display_message_log: true;
+
+// Subscriber name & currently online name
+$subs_name:"commanders";
+$online_users: "having trouble docking";
+
+// Submit button
+$submit_post_type: left_simple; // Choose between: left_simple, centered_stylized
+$post_type_color: $main_color; // Color of the button
+
+// Artwork
+$display_artwork: true; // Visible in sidebar
+$artwork_type: caption; // Choose between: caption, link, randomized (first h5 html tag in sidebar)
+$artwork_height: 180px; // Height of the artwork
+$artwork_margin: 7px;
+$artwork_top: $header_total_height + $artwork_margin;
+
+// Frontier Store and Server service status
+$display_service_status:true;
+///////
+
+// Footer
+//$footer_image:false; // TODO: Not yet implemented; If true, will use %%footer%% for image
+
+// Subdomains
+
+// RES Night Mode
+$nm_text_color:#BCBCBC;
+$nm_ptext_color:#DBDBDB;
+
+$nm_link_light:#74A5D8;
+$nm_link_visited:#9B7ED2;
+
+$nm_border_color:#212121;
+$nm_bg_color:#313131;

@@ -1,0 +1,194 @@
+#header {
+	border: none;
+	outline: none;
+}
+
+#sr-header-area {
+	position: absolute;
+	border: none;
+	background: transparent;
+	top: 0;
+	width: 100%;
+	color: #969696 !important;
+	transition: .2s all;
+	background: rgba(0, 0, 0, 0.6) !important;
+	#sr-more-link {
+		display: none;
+	}
+	.dropdown.srdrop .selected {
+		color: #969696;
+	}
+}
+.sr-bar {
+	color: inherit;
+	transition: .2s all;
+	a {
+		@extend .sr-bar;
+		&:hover {
+			color: white;
+		}
+	}
+}
+#RESShortcutsEditContainer div, #RESShortcutsEditContainer {
+	background: none!important;
+	color: lightgrey;
+}
+#header-bottom-left {
+	background: url(%%header%%);
+	background-size: cover;
+	height: $header_height;
+	padding-top: $header_padding_top;
+}
+.pagename {
+	color: transparent;
+	font-size: 0px;
+	a {
+		@if $display_elite_image {
+			background: url(%%elite%%);
+			background-repeat: no-repeat;
+			color: transparent;
+		}
+		@else {
+			font-size: 24pt;
+			color: white;
+		}
+		font-weight: 100;
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: $header_height - 90px;
+		height: 50px;
+		width: 303px;
+		margin: 0 auto;
+		text-transform: uppercase;
+	}
+}
+#header-img-a {
+	position: relative;
+}
+#header-img {
+	margin-left: 10px;
+}
+@if $header_link_type == original_elite {
+	#header .tabmenu {
+		height: 0;
+		overflow: visible;
+		position: absolute;
+		top: $header_height - 30px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	#header .tabmenu, #header .tabmenu li, #header .tabmenu li a, #header .tabmenu li.selected, #header .tabmenu li.selected a {
+		background: none;
+		//Pre buggy banner: color: #c6c6c6;
+		color: #DADADA; // Remove when buggy banner is over
+		text-shadow: 0px 0 2px black, 0px 0 2px black; // Remove when buggy banner is over
+		border: none;
+		outline: none;
+		padding: 0;
+		margin: 0;
+		font-weight: 100;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	#header .tabmenu li a, #header .tabmenu li.selected a {
+		padding: 10px;
+		transition: .2s all;
+	}
+	#header .tabmenu li a:hover, #header .tabmenu li.selected a {
+		color: white;
+		background: rgba(0, 0, 0, 0.23);
+	}
+	#header-bottom-right {
+		background: none!important;
+		border: none;
+		position: absolute!important;
+		top: $header_height - 4px !important;
+		background: rgba(0,0,0,0.5) !important;
+		border-radius: 0 !important;
+		* {
+			color: #b2b2b2!important;
+		}
+	}
+	#userbarToggle {
+		border: none!important;
+		background: none!important;
+	}
+}
+@else if $header_link_type == overwatch_style {
+	#header .tabmenu {
+		height: 27px;
+		background-color: rgba(11, 72, 131, 0.3);
+		position: absolute;
+		top: 143px;
+		left: 0;
+		right: 0;
+		z-index: 998;
+	}
+	#header .tabmenu::first-child() {
+		margin-left: 6px;
+	}
+	#header .tabmenu, #header .tabmenu li, #header .tabmenu li a, #header .tabmenu li.selected, #header .tabmenu li.selected a {
+		background: none;
+		color: #EDEDED;
+		text-shadow: 0 1px 1px #000;
+		border: none;
+		outline: none;
+		padding: 0;
+		margin: 0;
+		font-weight: 100;
+		text-transform: capitalize;
+		letter-spacing: 1.2px;
+		font-size: 8pt;
+	}
+	#header-bottom-right {
+		background: none!important;
+		border: none;
+		padding: 1px;
+		top: 0 !important;
+		* {
+			color: #b2b2b2!important;
+		}
+	}
+	#sr-header-area {
+		#RESShortcutViewport, #RESShortcutsEditContainer {
+			margin-right: 450px;
+		}
+	}
+	#header .tabmenu li a, #header .tabmenu li.selected a {
+		display: inline-block;
+		padding: 6.5px 10px;
+		transition: 80ms all;
+	}
+	#header .tabmenu li a:hover, #header .tabmenu li.selected a {
+		color: white;
+		background: rgba(0, 0, 0, 0.23);
+	}
+}
+@else {
+	@error "$header_link_type does not have a valid entry!";
+}
+
+.message-count {
+	background: none;
+	&:before {
+		content: "(";
+	}
+	&:after {
+		content: ")";
+	}
+}
+#mail.nohavemail { @include sprites-sprite(mailno); }
+#mail.havemail { @include sprites-sprite(mailyes); }
+#modmail.nohavemail { @include sprites-sprite(modmailno); }
+#modmail.havemail { @include sprites-sprite(modmailyes); }
+
+.stickied .stickied-tagline{
+	font-size: 0;
+	&::after{
+	   content:"stickied post";
+	   font-size: x-small;
+	}
+}

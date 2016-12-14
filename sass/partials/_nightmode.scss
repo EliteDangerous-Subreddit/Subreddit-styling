@@ -1,0 +1,198 @@
+/* Nightmode */
+.res-nightmode{
+    background-color: #424242 !important;
+    color:$nm_text_color;
+    .side{
+        background:none!important;
+        .md td {
+            background-color: rgb(34, 34, 34);
+        }
+    }
+    ul{
+        background: none !important;
+    }
+    pre{
+        background: #666 !important;
+        border: 1px solid #6d6d6d !important;
+        &> .code{
+            background: none !important;
+        }       
+    }
+    code{
+        background: #555 !important;
+        border: 1px solid #5d5d5d !important;
+    }
+    .sidebox.create{
+        background:none!important;
+    }
+    .icon-menu a{
+        background:none !important;
+        color: $nm_link_light !important;
+    }
+    .sitetable{
+        .entry{
+            background:none !important;
+        }
+        &> .thing:nth-child(4n+1), .listings > .thing:nth-child(4n+1){
+            background-color: #2E2E2E !important;
+        }
+        &> .thing:nth-child(4n+3), .listings > .thing:nth-child(4n+3){
+            background-color: darken(#2E2E2E, 1.5) !important;
+        }
+        .thing.stickied{
+            background-color:#313538 !important;
+        }
+    }
+    .stickied + .clearleft + .thing:not(.stickied){
+        border-top: 1px solid $nm_border_color;
+    }
+    .linklisting .thing {
+        border-color: $nm_border_color;
+    }
+    .sidecontentbox .content{
+        background:none!important;
+    }
+    .RES-keyNav-activeElement{
+        .usertext-body{
+            background:none !important;
+        }
+        .md{
+            background-color:shade($nm_bg_color, 10%) !important;
+            border:1px solid #163047 !important;
+        }
+    }
+    .link{
+        border-bottom: 1px solid $nm_border_color;
+    }
+    &> .content {
+        background: none !important;
+    }
+    .titlebox, .sidecontentbox, #search input[type="text"], #searchexpando, .linkinfo, .titlebox form.toggle, .leavemoderator, .morelink a, .sidebox .spacer, .side .md h2:nth-of-type(1){
+        background-color: $nm_bg_color !important;
+        color: $nm_text_color !important;
+    }
+    &> .content {
+        border: none;
+    }
+    .comment, .titlebox, .sidecontentbox, #search input[type="text"], #searchexpando, .linkinfo, .side .md h2:nth-of-type(1), #progressIndicator, .NERPageMarker, .sidebox.create > .spacer{
+        border: 1px solid $nm_border_color !important;
+    }
+    .thing.stickied a.title, .thing.stickied a.title:visited, .thing.stickied a.title.visited, .tagline .stickied-tagline{
+        color: #47B147 !important;
+    }
+    .infobar, #progressIndicator, .NERPageMarker{
+        background-color:shade($nm_bg_color, 10%);
+        border-color:shade($nm_bg_color, 11%);
+    }
+    .new-comment .usertext-body .md{
+        border:none !important;
+    }
+    .tagline a{
+        color: adjust-saturation($nm_link_light, -30%);
+    }
+    .usertext.border .usertext-body{
+        background-color: #363531;
+    }
+    span.score {
+        color:#888 !important;
+    }
+    .flair, .side .linkflairlabel{
+        border: 1px solid adjust-lightness(#313131, -3%) !important;
+        background-color: adjust-lightness(#313131, -3%) !important;
+    }
+    .flair, .linkflairlabel{
+        color: $nm_text_color !important;
+    }
+    .linkflairlabel{
+        background:none!important;
+    }
+    .commentarea .menuarea, .sidebox .subtitle{
+        color:$nm_text_color;
+    }
+    .md blockquote, .md del{
+        color:$nm_ptext_color - #555;
+    }
+    .commentarea .RES-keyNav-activeElement .md{
+        background:none !important;
+        border: none !important;
+    }
+    #srList{
+        background-color: #363636 !important;
+        color:$nm_text_color !important;
+        a{
+            color: $nm_link_light !important;
+        }
+        tr{
+            border-bottom: 1px solid #1A1A1A !important;
+            &:hover{
+                background-color: #363636-#222 !important;
+            }
+        }
+    }
+    .comment,
+    .comment .comment .comment,
+    .comment .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+    .res-commentBoxes .content .comment,
+    .res-commentBoxes .content .comment .comment .comment,
+    .res-commentBoxes .content .comment .comment .comment .comment .comment,
+    .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,
+    .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment
+     {
+        background-color: #424242!important;
+    }
+    .comment .comment,
+    .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment .comment .comment,
+    .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+    .res-commentBoxes .content .comment .comment,
+    .res-commentBoxes .content .comment .comment .comment .comment,
+    .res-commentBoxes .content .comment .comment .comment .comment .comment .comment,
+    .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,
+    .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+        background-color: shade(#424242, 15%)!important;
+        border-radius: 3px !important;
+    }
+    .footer{
+        background-color:#212121 !important;
+        border: 1px solid #181818;
+        .col{
+            border-left: 1px solid #181818 !important;
+            &:first-child {
+                border: medium none !important;
+            }
+        }
+    }
+    .tb-bottombar a{
+        color: #369;
+    }
+    textarea{
+        background-color: #262626;
+        border: 1px solid #666;
+        color:$nm_ptext_color;
+    }
+    #sr-header-area{
+        color: #969696;
+        &:hover{
+            color:white;
+        }
+    }
+    .sr-bar a{
+        color: inherit;
+        &:hover{
+            color:white;
+        }
+    }
+    .link.promotedlink.promoted{
+        background-color: #2F3235 !important;
+    }
+    .morelink a{
+        &:hover, &:active {
+            color: black !important;
+            background: $main_color !important;
+        }
+    }
+}
+/* Nightmode END*/

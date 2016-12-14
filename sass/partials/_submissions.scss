@@ -1,0 +1,139 @@
+body > .content {
+	background-color: white;
+	border:1px solid $border_color;
+	border-radius: 0px;
+	margin-right: 320px;
+	box-sizing: border-box;
+	@if $display_message_log {
+		margin-top: 45px;
+	}
+}
+
+body > .content .link .midcol, .midcol-spacer {
+	width: 5.2ex;
+}
+
+.link .entry {
+	margin-top: 3px;
+}
+.thumbnail.self { @include sprites-sprite(selfpost); }
+body.listing-page {
+	&> .content {
+		background:none;
+		border:none;
+	}
+	.entry a.title {
+		color: $horizons_blue;
+		&:visited {
+			color: darken(desaturate($horizons_blue, 50), 10);
+		}
+		&:hover {
+			color: darken($horizons_blue, 20);
+		}
+	}
+	.stickied .entry a.title {
+		&:visited {
+			color: darken(#228822, 5);
+		}
+		&:hover {
+			color: lighten(#228822, 7);
+		}
+	}
+	.entry .buttons {
+		li {
+			a {
+				color: #AAA !important;
+			}
+			&.first a {
+				color: $horizons_blue !important
+			}
+		}
+		&:hover li:not(.rounded) a {
+			color: $horizons_blue !important;
+		}
+	}
+	@if $distinguish_set_flair {
+		.thing:not(.linkflair) .entry .buttons {
+			.flairselectbtn {
+				color: #ff7100 !important;
+				&::before{
+					content:"set ";
+				}
+			}
+			&:hover {
+				.flairselectbtn {
+					color: darken(#ff7100, 5) !important;
+				}
+			}
+		}
+	}
+	.stickied .entry .buttons {
+		li {
+			a {
+				color: #AAA !important;
+			}
+			&.first a {
+				color: #228822 !important
+			}
+		}
+		&:hover li:not(.rounded) a {
+			color: #228822 !important;
+		}
+	}
+}
+@if $distinguish_set_flair {
+	.linklisting {
+		.thing:not(.linkflair) .entry .buttons {
+			.flairselectbtn {
+				color: #ff7100 !important;
+				&::before{
+					content:"set ";
+				}
+			}
+		}
+		&:hover {
+			.flairselectbtn {
+				color: darken(#ff7100, 5) !important;
+			}
+		}
+	}
+}
+.content .spacer {
+    margin: 0;
+}
+.stickied{
+	border: $stickied_border_color solid !important;
+	border-width: 1px !important;
+	margin-bottom: $stickied_promotion_post_gap !important;
+}
+.linklisting .thing{
+	border: solid;
+	border-width: 1px;
+	border-color: $border_color;
+	border-top: none;
+	background-color: white;
+}
+.stickied + .clearleft + .thing:not(.stickied){
+	border-top: 1px solid $border_color;
+	margin-top: $stickied_promotion_post_gap;
+}
+.stickied + .clearleft + .stickied{
+	border-top-width: 0 !important;
+	margin-top: -$stickied_promotion_post_gap;
+}
+.link {
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #f0f0f0;
+	&.promotedlink.promoted {
+		padding: 10px;
+    	margin-bottom: $stickied_promotion_post_gap;
+		border: 1px solid $border_color;
+	}
+	.rank {
+		display: none;
+	}
+	&.stickied {
+		background: #ECFAFF;
+	}
+}

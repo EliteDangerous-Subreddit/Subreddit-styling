@@ -1,0 +1,48 @@
+/* Taken from /r/Anime */
+#header:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:transparent;
+    background-image:url("%%snow%%"),url("%%snow%%");
+    -webkit-animation:snow 15s linear infinite;
+    -moz-animation:snow 15s linear infinite;
+    -ms-animation:snow 15s linear infinite;
+    animation:snow 15s linear infinite;
+    pointer-events:none
+}
+@-webkit-keyframes snow {
+    0% {
+        background-position:0 0,0 0,0 0
+    }
+    100% {
+        background-position:500px 1000px,400px 400px,300px 300px
+    }
+}
+@-moz-keyframes snow {
+    0% {
+        background-position:0 0,0 0,0 0
+    }
+    100% {
+        background-position:500px 1000px,400px 400px,300px 300px
+    }
+}
+@-ms-keyframes snow {
+    0% {
+        background-position:0 0,0 0,0 0
+    }
+    100% {
+        background-position:500px 1000px,400px 400px,300px 300px
+    }
+}
+@keyframes snow {
+    0% {
+        background-position:0 0,0 0,0 0
+    }
+    100% {
+        background-position:500px 1000px,400px 400px,300px 300px
+    }
+}

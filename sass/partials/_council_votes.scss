@@ -1,0 +1,15 @@
+.usertext-body a[href="#yes"]::before, .usertext-body a[href="#no"]::before, .usertext-body a[href="#pass"]::before{
+    cursor:default;
+}
+.usertext-body a[href="#yes"]::before{
+    content:"This user has voted for the change.";
+    color:green;
+}
+.usertext-body a[href="#no"]::before{
+    content:"This user has voted against the change.";
+    color:crimson;
+}
+.usertext-body a[href="#pass"]::before{
+    content:"This user abstained from voting.";
+    color:grey;
+}

@@ -1,0 +1,9 @@
+.modtools-page > div.content{
+	@if $display_message_log {
+		margin: 45px 320px 0px 5px;
+	}
+}
+.subreddit-rules-page{
+	background-color: white;
+	border:1px solid $border_color;
+}

@@ -1,0 +1,268 @@
+@import 'partials/artwork_type';
+@if $display_artwork {
+    .side {
+        margin-top: $artwork_height+13px;
+    }
+    @if $artwork_type == randomized {
+		h1.redditname a {
+			display:none;
+		}
+		@include randomized_artwork;
+	}
+	@else {
+		h1.redditname {
+			width: $sidebar_width;
+			height: $artwork_height;
+			background: url(%%artwork%%);
+			position: absolute;
+			top: $artwork_top;
+			right: 5px;
+			a {
+				display:none;
+			}
+		}
+        @if $artwork_type == link {
+            @include artwork_link;
+        }
+        @else if $artwork_type == caption {
+            @include artwork_caption;
+        }
+        @else{
+            @warn "No artwork type given or incorrectly set";
+        }
+	}
+}
+@else {
+    h1.redditname {
+        display: none;
+    }
+}
+.side {
+    @if $sidebar_width != 300px {
+        width: $sidebar_width;
+    }
+    background: transparent;
+    //Message log
+    @if $display_message_log {
+        .md > h2:nth-of-type(1) {
+            position: absolute;
+            top: $header_height + 20px;
+            font-size: 13px;
+            right: 320px;
+            left: 5px;
+            background: white;
+            border: 1px solid #e2e2e2;
+            padding: 5px;
+            line-height: normal;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .md h1 {
+        border-bottom: 1px solid $sidebar_header;
+        color: $sidebar_header;
+        //#EF4040
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    //Status and version
+    .titlebox .usertext-body .md:nth-child(1) > blockquote:nth-of-type(1){
+        background:none;
+        border:none;
+        margin: 0;
+        padding: 0;
+        > p {
+            font-size: 90%;
+            color: gray;
+            text-align: center;
+        }
+    }
+    .titlebox .usertext-body .md:nth-child(1) > blockquote:nth-of-type(1) > h1 a[href$="#soon"]{
+        font-size: 85%;
+        color: #BBB;
+        float: right;
+        font-weight: normal;
+    }
+    .titlebox .usertext-body .md:nth-child(1) > blockquote:nth-of-type(1) > h1 a[href$="#soon"]:hover{
+        color: #DD513B;
+        text-decoration: none;
+    }
+    // Change to include only position but still include in major stylesheet setting at top
+    @if $display_service_status {
+        a[href^="#status_green_servers"]{ @include sprites-sprite(status-server-on); }
+        a[href^="#status_yellow_servers"]{ @include sprites-sprite(status-server-issues); }
+        a[href^="#status_red_servers"]{ @include sprites-sprite(status-server-off); }
+        a[href^="#status_green_store"]{ @include sprites-sprite(status-store-on); }
+        a[href^="#status_yellow_store"]{ @include sprites-sprite(status-store-issues); }
+        a[href^="#status_red_store"]{ @include sprites-sprite(status-store-off); }
+        a[href^="#status_green"], a[href^="#status_yellow"], a[href^="#status_red"] {
+            display: inline-block;
+            height: 32px !important;
+            vertical-align: middle;
+            width: 32px;
+            border: 0;
+            cursor: default;
+            text-indent: -9999px !important;
+            padding: 0 !important;
+            margin-bottom: 2px;
+            margin-top: 0 !important;
+            font-size: 1.1em !important;
+        }
+        //End status and version
+    }
+    .md ul {
+        padding-left: 15px;
+    }
+
+    //Sidebar table
+    .md table {
+        background-color: white;
+        font-size: 10px !important;
+        text-align: center;
+        margin: 10px 0;
+        width: 100%;
+        letter-spacing: 0.02em;
+    }
+    .md th, .md td {
+        padding: 5px 7px;
+    }
+    .md tr:nth-child(odd){
+        background-color: rgba(0, 0, 0, 0.015);
+    }
+    .md th {
+        text-align: center;
+        height: 23px;
+        padding: 0;
+        color: #fff;
+        background-color: $horizons_blue;
+        border: none;
+        border-right: 1px solid;
+        border-color: $horizons_blue - #111;
+        border-radius: 0 !important;
+        &:nth-of-type(1){
+            border-top-left-radius: 2px !important;
+        }
+        &:nth-of-type(2){
+            border-top-right-radius: 2px !important;
+        }
+    }
+    .md td{
+        border-color: #ececec;
+        border-left-color: #ececec;
+        border-right-color: #ececec;
+    }
+    .md th:last-child{
+        border-right:none;
+    }
+}
+.sidecontentbox {
+    .content {
+        border: none;
+    }
+    .flair {
+        display: none;
+    }
+}
+
+.titlebox, .sidecontentbox, #search input[type=text], #searchexpando, .linkinfo {
+    color: black;
+    background: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 0px;
+    outline: none;
+    padding: 15px;
+}
+#search input[type=text] {
+    padding: 5px;
+}
+#searchexpando {
+    margin-top: 10px;
+}
+.morelink, .morelink:hover, .morelink:active {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+.morelink {
+    .nub {
+        display: none;
+    }
+    @if $submit_post_type == left_simple {
+        a {
+            color: $post_type_color;
+            border-left: 5px solid $post_type_color;
+            background: #FFFDF9;
+            padding-left: 5px;
+            text-align: left;
+            font-weight: 100;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            transition: .1s all;
+            &:hover {
+                color: black;
+                background: $post_type_color;
+            }
+            &:active {
+                color: $post_type_color;
+                background: #FFFDF9;
+            }
+        }
+    }
+    @elseif $submit_post_type == centered_stylized {
+    	border-left:2px solid $post_type_color;
+    	color:rgb(51,51,51) !important;
+    	background:white;
+    	border:0;
+    	border-left:4px solid $post_type_color;
+    	transition:100ms all;
+        &:hover {
+        	background:$post_type_color;
+        	border-left:4px solid darken($post_type_color, 10);
+            &>a {
+            	color:white
+            }
+        }
+        a {
+        	color:#111;
+        	text-transform:uppercase;
+        	font-size:12px;
+        	font-weight:600;
+        	letter-spacing:2px;
+        	transition:100ms all;
+        }
+    }
+    @else {
+        @warn "$submit_post_type does not contain a valid entry!";
+    }
+}
+.users-online {
+    display: inline-block;
+
+    &:before {
+        display: none;
+    }
+    .word {
+        display: none;
+    }
+    .number {
+        color: #767676;
+    }
+}
+.subscribers {
+    .word {
+        display: none;
+    }
+    .number:after {
+        content: " " + $subs_name;
+    }
+}
+.users-online {
+    .number:before {
+        content: "(";
+    }
+    .number:after {
+        content: " " + $online_users + ")";
+    }
+}

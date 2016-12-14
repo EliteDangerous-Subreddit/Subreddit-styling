@@ -1,0 +1,83 @@
+@if $link_flair_type == right_orange {
+	.title .linkflairlabel {
+		background: none;
+		border: none;
+		float: right;
+		font-size: 12px;
+		color: $main_color;
+		border-bottom: 1px solid $main_color;
+		text-transform: uppercase;
+		text-align: right;
+		width: 200px;
+	}
+}
+@elseif $link_flair_type == overwatch_style {
+	.sitetable .thing {
+		padding: 12px 10px 10px 10px;
+		position: relative;
+		&:hover .title .linkflairlabel {
+			color: darken(#aaa, 20);
+		}
+	}
+	.title{
+		margin-top:0px;
+		.linkflairlabel {
+			position: absolute;
+			background: none;
+			font-weight: 100;
+			font-size: 12px;
+			top:0px;
+			padding: 0;
+			color: #aaa;
+			border: none;
+			&:hover{
+				color: darken(#aaa, 25);
+			}
+		}
+	}
+	.res-flairSearch.linkflairlabel{
+		position: absolute;
+	}
+}
+@elseif $link_flair_type == colored_labels {
+	.title .linkflairlabel {
+	    padding: 2px 5px;
+	    background-color: $default_link_flair_color;
+	    color: white;
+	    border: none;
+	    font-size: 8pt;
+	    vertical-align: middle;
+	}
+	.sitetable .thing.linkflair- {
+		&red .title .linkflairlabel {
+			background-color: #ea6363;
+		}
+		&orange .title .linkflairlabel {
+			background-color: #ff703b;
+		}
+		&blue .title .linkflairlabel {
+			background-color: #5b93f6;
+		}
+		&green .title .linkflairlabel {
+			background-color: #43c064;
+		}
+		&darkgreen .title .linkflairlabel {
+			background-color: #fb6eea;
+		}
+		&purple .title .linkflairlabel {
+			background-color: #c050d7;
+		}
+		&pink .title .linkflairlabel {
+			background-color: #fb6eea;
+		}
+		&eliteorange .title .linkflairlabel {
+			background-color: $elite_orange;
+		}
+		&horizonsblue .title .linkflairlabel {
+			background-color: $horizons_blue;
+		}
+	}
+}
+@else {
+	@warn "$link_flair_type does not contain a valid entry!";
+}

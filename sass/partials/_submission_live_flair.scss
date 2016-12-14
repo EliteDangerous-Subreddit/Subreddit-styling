@@ -1,0 +1,41 @@
+.linkflair-new.stickied:not(.visited)
+{
+	p.title{
+		position: relative;
+		padding-left:18px;
+		&::before{
+			position: absolute;
+			left:6px;
+			top:6px;
+			content:"";
+			width:6px;
+			height:6px;
+			background-color: red;
+			display: inline-block;
+			border-radius: 15px;
+		}
+		&::after{
+			position: absolute;
+			left:5px;
+			top:5px;
+			content:"";
+			width:6px;
+			height:6px;
+			background-color: rgba(0,0,0,0);
+			border:1px solid red;
+			display: inline-block;
+			border-radius: 15px;
+			animation: newPost infinite 750ms;
+		}
+	}
+}
+@keyframes newPost{
+  from{
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  to{
+    transform: scale(2.3);
+    opacity: 0;
+  }
+}

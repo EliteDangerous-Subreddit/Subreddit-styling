@@ -1,0 +1,14 @@
+body.submit-page > .content, body.wiki-page > .content{
+	@if $display_message_log {
+		margin: 45px 320px 0px 5px;
+	}
+	padding:5px;
+	@extend .subreddit-rules-page;
+}
+.wiki-page .wiki-page-content{
+	margin:15px;
+}
+// Make wiki revisions easier to read
+.wikirevisionlisting .flair{
+	display: none;
+}

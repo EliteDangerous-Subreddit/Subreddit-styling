@@ -1,0 +1,115 @@
+@mixin artwork_link {
+    .side {
+        .md h5:nth-of-type(1) a{
+        	width: $sidebar_width;
+        	height: $artwork_height;
+        	position: absolute;
+        	right: 5px;
+        	top: 176px;
+        	color: #FFFDF9;
+        	display: block;
+        	vertical-align: middle;
+        	font-size: 0pt;
+        }
+    }
+}
+@mixin artwork_caption {
+    .side {
+        .md h5:nth-of-type(1) {
+            position: absolute;
+            right: 5px;
+            top: $artwork_height+$header_height - 12px;
+            color: #FFFDF9;
+            display: block;
+            border-left: 5px none;
+            padding: 2px 15px 2px 8px;
+            vertical-align: middle;
+            background-color: rgba(0, 0, 0, 0.31);
+            font-size: 8pt;
+            font-weight: 100;
+            border-top: 1px solid rgba(255, 165, 0, 0.31);
+            border-bottom: 1px solid rgba(255, 165, 0, 0.31);
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+    		z-index: 100;
+            a{
+                color:inherit;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@mixin randomized_artwork {
+    .res-navTop input[name=uh] ~ a:after {
+        top: 24px + $artwork_margin;
+    }
+    // If user isn't logged in, default artwork
+    body:not(.loggedin) .side {
+        margin-top: $artwork_margin;
+        &:before {
+            content: url(%%artwork%%);
+        }
+    }
+    input[name=uh] {
+        ~ a:after {
+            position: absolute;
+            top: 24px + $artwork_margin;
+            right: 5px;
+            width: $sidebar_width;
+            height: $artwork_height;
+        }
+        &[value^="0"] ~ a:after,
+        &[value^="4"] ~ a:after,
+        &[value^="8"] ~ a:after,
+        &[value^="c"] ~ a:after,
+        &[value^="g"] ~ a:after,
+        &[value^="k"] ~ a:after,
+        &[value^="o"] ~ a:after,
+        &[value^="s"] ~ a:after,
+        &[value^="w"] ~ a:after {
+            content: url(%%artwork01%%);
+        }
+        &[value^="1"] ~ a:after,
+        &[value^="5"] ~ a:after,
+        &[value^="9"] ~ a:after,
+        &[value^="d"] ~ a:after,
+        &[value^="l"] ~ a:after,
+        &[value^="h"] ~ a:after,
+        &[value^="p"] ~ a:after,
+        &[value^="t"] ~ a:after,
+        &[value^="x"] ~ a:after {
+            content: url(%%artwork02%%);
+        }
+        &[value^="2"] ~ a:after,
+        &[value^="6"] ~ a:after,
+        &[value^="a"] ~ a:after,
+        &[value^="e"] ~ a:after,
+        &[value^="i"] ~ a:after,
+        &[value^="m"] ~ a:after,
+        &[value^="q"] ~ a:after,
+        &[value^="u"] ~ a:after,
+        &[value^="y"] ~ a:after {
+            content: url(%%artwork03%%);
+        }
+        &[value^="3"] ~ a:after,
+        &[value^="7"] ~ a:after,
+        &[value^="b"] ~ a:after,
+        &[value^="f"] ~ a:after,
+        &[value^="j"] ~ a:after,
+        &[value^="n"] ~ a:after,
+        &[value^="r"] ~ a:after,
+        &[value^="v"] ~ a:after,
+        &[value^="z"] ~ a:after {
+            content: url(%%artwork04%%);
+        }
+    }
+    .loggedin .side:before {
+        content: '';
+        position: absolute;
+        top: $artwork_top;
+        width: $sidebar_width;
+        height: $artwork_height;
+        right: 5px;
+        z-index: 999;
+    }
+}
