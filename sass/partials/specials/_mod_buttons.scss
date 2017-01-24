@@ -1,0 +1,41 @@
+.pretty-button {
+    border-radius: 2px;
+    padding: 2px 6px;
+}
+
+.pretty-button:hover {
+    background: #2e2e2e!important;
+    border: 1px solid black !important;
+    color: white;
+}
+
+.pretty-button.neutral {
+    background-image: none;
+    background: #ddd;
+    border: 1px solid #CECECE;
+}
+
+.pretty-button.neutral.pressed {
+    background-image: none;
+    background: #ccc;
+    border: 1px solid #CECECE;
+}
+
+.pretty-button.positive {
+    background-image: none;
+    background: #abffae;
+    border: 1px solid #91da93;
+}
+
+.pretty-button.negative {
+    background-image: none;
+    background: #ffabab;
+    border: 1px solid #d68d8d;
+}
+
+.entry .buttons li.reported-stamp {
+    border-radius: 2px;
+    padding: 1px 6px;
+    background: #FFEC96;
+    border: 1px solid #E7D47C !important;
+}
