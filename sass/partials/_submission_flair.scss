@@ -19,6 +19,64 @@
 			color: darken(#aaa, 20);
 		}
 	}
+	.sitetable .thing.linkflair- {
+		&red .title .linkflairlabel {
+			color: lighten(#ea6363, 15);
+		}
+		&orange .title .linkflairlabel {
+			color: lighten(#ff703b, 15);
+		}
+		&blue .title .linkflairlabel {
+			color: lighten(#5b93f6, 15);
+		}
+		&green .title .linkflairlabel, &weekly .title .linkflairlabel {
+			color: lighten(#43c064, 15);
+		}
+		&darkgreen .title .linkflairlabel {
+			color: lighten(#fb6eea, 15);
+		}
+		&purple .title .linkflairlabel {
+			color: lighten(#c050d7, 15);
+		}
+		&pink .title .linkflairlabel {
+			color: lighten(#fb6eea, 15);
+		}
+		&eliteorange .title .linkflairlabel {
+			color: lighten($elite_orange, 15);
+		}
+		&horizonsblue .title .linkflairlabel {
+			color: lighten($horizons_blue, 15);
+		}
+	}
+	.sitetable .thing:hover.linkflair- {
+		&red .title .linkflairlabel {
+			color: #ea6363;
+		}
+		&orange .title .linkflairlabel {
+			color: #ff703b;
+		}
+		&blue .title .linkflairlabel {
+			color: #5b93f6;
+		}
+		&green .title .linkflairlabel, &weekly .title .linkflairlabel {
+			color: #43c064;
+		}
+		&darkgreen .title .linkflairlabel {
+			color: #fb6eea;
+		}
+		&purple .title .linkflairlabel {
+			color: #c050d7;
+		}
+		&pink .title .linkflairlabel {
+			color: #fb6eea;
+		}
+		&eliteorange .title .linkflairlabel {
+			color: $elite_orange;
+		}
+		&horizonsblue .title .linkflairlabel {
+			color: $horizons_blue;
+		}
+	}
 	.title{
 		margin-top:0px;
 		.linkflairlabel {
@@ -36,7 +94,7 @@
 		}
 	}
 	.res-flairSearch.linkflairlabel{
-		position: absolute;
+		position: absolute !important;
 	}
 }
 @elseif $link_flair_type == colored_labels {

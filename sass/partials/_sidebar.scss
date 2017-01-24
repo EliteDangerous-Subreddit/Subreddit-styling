@@ -1,13 +1,15 @@
 @import 'partials/artwork_type';
+@import 'artwork_content';
 @if $display_artwork {
     .side {
         margin-top: $artwork_height+13px;
     }
-    @if $artwork_type == randomized {
+    @if $artwork_type == random {
 		h1.redditname a {
 			display:none;
 		}
-		@include randomized_artwork;
+		@include artwork_random;
+		@include artwork_random_captions;
 	}
 	@else {
 		h1.redditname {

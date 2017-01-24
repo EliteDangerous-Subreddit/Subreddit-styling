@@ -39,77 +39,63 @@
         }
     }
 }
-@mixin randomized_artwork {
-    .res-navTop input[name=uh] ~ a:after {
-        top: 24px + $artwork_margin;
-    }
-    // If user isn't logged in, default artwork
-    body:not(.loggedin) .side {
-        margin-top: $artwork_margin;
-        &:before {
-            content: url(%%artwork%%);
-        }
-    }
-    input[name=uh] {
-        ~ a:after {
+@mixin artwork_random {
+	input[name=uh] ~ a:after {
+		position: absolute;
+		top: $artwork_to_logout_gap;
+		right: 5px;
+		width: $sidebar_width;
+		height: $artwork_height;
+	}
+	input[name=uh] ~ a:before {
+		position: absolute;
+		right: 5px;
+		top: $artwork_top;
+		color: #FFFDF9;
+		display: block;
+		border-left: 5px none;
+		padding: 2px $artwork_margin 2px 5px;
+		vertical-align: middle;
+		background-color: rgba(0, 0, 0, 0.4);
+		font-size: 8pt;
+		font-weight: 100;
+		text-shadow: 0px 0 2px rgba(0, 0, 0, 0.7), 0px 0 2px rgba(0, 0, 0, 0.7);
+		border-top: 1px solid rgba(255, 165, 0, 0.4);
+		border-bottom: 1px solid rgba(255, 165, 0, 0.4);
+		border-top-left-radius: 2px;
+		border-bottom-left-radius: 2px;
+		z-index: 99;
+	}
+	.res-navTop input[name=uh] ~ a:after {
+		top: $artwork_to_logout_gap;
+	}
+	body:not(.loggedin) .side {
+		  margin-top: $artwork_margin;
+	}
+	body:not(.loggedin) .side:before {
+		content: url(%%DefaultArt%%);
+	}
+	.loggedin .side:before {
+		content: '';
+		position: absolute;
+		top: $artwork_top;
+		width: $sidebar_width;
+		height: $artwork_height + 3;
+		z-index: 99;
+	}
+    .side {
+        .md h5:nth-of-type(1) {
             position: absolute;
-            top: 24px + $artwork_margin;
             right: 5px;
-            width: $sidebar_width;
-            height: $artwork_height;
+            top: $artwork_caption_vpos;
+            color: rgba(0,0,0,0);
+            vertical-align: middle;
+            font-size: 8pt;
+            font-weight: 100;
+            z-index: 101;
+            a{
+                color:inherit;
+            }
         }
-        &[value^="0"] ~ a:after,
-        &[value^="4"] ~ a:after,
-        &[value^="8"] ~ a:after,
-        &[value^="c"] ~ a:after,
-        &[value^="g"] ~ a:after,
-        &[value^="k"] ~ a:after,
-        &[value^="o"] ~ a:after,
-        &[value^="s"] ~ a:after,
-        &[value^="w"] ~ a:after {
-            content: url(%%artwork01%%);
-        }
-        &[value^="1"] ~ a:after,
-        &[value^="5"] ~ a:after,
-        &[value^="9"] ~ a:after,
-        &[value^="d"] ~ a:after,
-        &[value^="l"] ~ a:after,
-        &[value^="h"] ~ a:after,
-        &[value^="p"] ~ a:after,
-        &[value^="t"] ~ a:after,
-        &[value^="x"] ~ a:after {
-            content: url(%%artwork02%%);
-        }
-        &[value^="2"] ~ a:after,
-        &[value^="6"] ~ a:after,
-        &[value^="a"] ~ a:after,
-        &[value^="e"] ~ a:after,
-        &[value^="i"] ~ a:after,
-        &[value^="m"] ~ a:after,
-        &[value^="q"] ~ a:after,
-        &[value^="u"] ~ a:after,
-        &[value^="y"] ~ a:after {
-            content: url(%%artwork03%%);
-        }
-        &[value^="3"] ~ a:after,
-        &[value^="7"] ~ a:after,
-        &[value^="b"] ~ a:after,
-        &[value^="f"] ~ a:after,
-        &[value^="j"] ~ a:after,
-        &[value^="n"] ~ a:after,
-        &[value^="r"] ~ a:after,
-        &[value^="v"] ~ a:after,
-        &[value^="z"] ~ a:after {
-            content: url(%%artwork04%%);
-        }
-    }
-    .loggedin .side:before {
-        content: '';
-        position: absolute;
-        top: $artwork_top;
-        width: $sidebar_width;
-        height: $artwork_height;
-        right: 5px;
-        z-index: 999;
     }
 }
