@@ -9,6 +9,7 @@ $enable_nightmode_spritesheet: true;
 $horizons_blue: #0a8bd6;
 $elite_orange: #FFA500;
 $main_color: $elite_orange;
+$gray_color: rgba(189,189,189,0.33);
 $sidebar_header: #EF4040; //For the h1 tags in sidebar (https://i.imgur.com/usF9iwW.png)
 $stickied_border_color: rgba(19, 142, 11, 0.52);
 
@@ -36,6 +37,9 @@ $only_remove_upvote: false; // Only removes the upvote if $remove_vote_when_no_f
 // Post listing
 $stickied_promotion_post_gap: 7px; // The gap between sponsored, stickied, and normal submissions in post listing
 $border_color: #e2e2e2;
+
+// Comments
+$collapse_on_left:true;
 
 /////// Sidebar
 $sidebar_width: 300px; // TODO: Not yet implemented everywhere needed

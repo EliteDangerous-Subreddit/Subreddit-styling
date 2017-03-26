@@ -1,4 +1,4 @@
-/* BEGIN: sticky comments */
+// BEGIN: sticky comments
 
 .comments-page .sitetable.nestedlisting>.thing.stickied
 {
@@ -7,4 +7,41 @@
 	padding: 5px;
 }
 
-/* END: sticky comments */
+// END: sticky comments
+
+@if $collapse_on_left {
+	.comment {
+		position: relative;
+		.midcol {
+			padding-left: 17px;
+		}
+		.expand {
+			display: block;
+			position: absolute;
+			height: 100%;
+			top:0;
+			left: 0;
+			width: 15px;
+			text-align: center;
+			font-size: 0;
+			text-decoration: none;
+			color:white !important;
+			background-color: $gray_color;
+			padding: 0;
+			transition: background-color 100ms;
+			&:hover{
+				background-color: $horizons_blue;
+				transition: background-color 100ms;
+				text-decoration: none;
+			}
+			&::after{
+				content: "-";
+				font-size: 16pt;
+				line-height: 17pt;
+			}
+		}
+		.collapsed .expand::after {
+			content: "+";
+		}
+	}
+}

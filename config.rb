@@ -21,8 +21,8 @@ end
 on_stylesheet_saved do |filename|
 	if File.exists?(filename)
 		css = File.read filename
-		css = css.gsub(/(?<=url\()'\/images\/sprites-.+?'/, '%%spritesheet%%') 
-		css = css.gsub(/(?<=url\()'\/images\/nmvotes-.+?'/, '%%nmvotesheet%%') 
+		css = css.gsub(/(?<=url\()'\/images\/sprites-.+?'/, '%%spritesheet%%')
+		css = css.gsub(/(?<=url\()'\/images\/nmvotes-.+?'/, '%%nmvotesheet%%')
 		File.open(filename, 'w+') do |f|
 			f.puts css
 		end
@@ -32,9 +32,9 @@ end
 
 #on_stylesheet_saved do |filename|
 #	if File.exists?(filename)
-#		css = File.read filename 
+#		css = File.read filename
 #		File.open(filename, 'w+') do |f|
-#			f << css.gsub(/(?<=url\()'\/images\/sprites-.+?'/, '%%spritesheet%%') 
+#			f << css.gsub(/(?<=url\()'\/images\/sprites-.+?'/, '%%spritesheet%%')
 #		end
 #	end
 #end
