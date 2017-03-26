@@ -11,7 +11,7 @@
 
 @if $collapse_on_left {
 	.comment {
-		position: relative;
+		position: relative; 
 		.midcol {
 			padding-left: 17px;
 		}
@@ -42,6 +42,7 @@
 		}
 		.collapsed .expand::after {
 			content: "+";
+			font-size: 13pt;
 		}
 	}
 }
