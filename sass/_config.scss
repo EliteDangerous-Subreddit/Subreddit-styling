@@ -11,7 +11,6 @@ $elite_orange: #FFA500;
 $main_color: $elite_orange;
 $gray_color: rgba(189,189,189,0.33);
 $sidebar_header: #EF4040; //For the h1 tags in sidebar (https://i.imgur.com/usF9iwW.png)
-$stickied_border_color: rgba(19, 142, 11, 0.52);
 
 // [](#yes), [](#no), [](#pass) - As a comment to display green, red or grey "i have voted"-text. Used in /r/EliteCouncil
 $council_votes: false;
@@ -40,6 +39,9 @@ $border_color: #e2e2e2;
 
 // Comments
 $collapse_on_left:true;
+$collapse_on_left_color:#5b93f6;
+$stickied_border_color: rgb(126, 196, 118);// rgba(19, 142, 11, 0.52);
+$stickied_border_color_dark: darken($stickied_border_color, 20);
 
 /////// Sidebar
 $sidebar_width: 300px; // TODO: Not yet implemented everywhere needed
