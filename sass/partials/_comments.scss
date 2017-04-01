@@ -46,7 +46,7 @@
 				line-height: 17pt;
 			}
 		}
-		&.stickied .expand {
+		&.stickied > .entry .expand {
 			background-color: $stickied_border_color;
 			&:hover{
 				background-color: $stickied_border_color_dark;
