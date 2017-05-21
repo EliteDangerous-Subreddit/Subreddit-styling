@@ -14,12 +14,19 @@
 @if $collapse_on_left {
 	.comment {
 		position: relative; 
+		overflow: visible !important;
+		&:not(.child) {
+			margin-top: 10px;
+		}
 		.midcol {
 			padding-left: 17px;
 		}
 		&.collapsed .expand::after {
 			content: "+";
 			font-size: 15px;
+		}
+		> .parent {
+			padding-left: 38px;
 		}
 		.expand {
 			display: block;
