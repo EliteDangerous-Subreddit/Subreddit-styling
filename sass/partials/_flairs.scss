@@ -4,26 +4,55 @@
     vertical-align: top;
     width: auto!important;
 }
+// default indent for most common flair (17px)
 .flair-img {
-    text-indent: 24px;
+    text-indent: 19px;
 }
-.flair-star { @include sprites-sprite(flair-star); text-indent: 21px; }
-.flair-bot { @include sprites-sprite(flair-bot); }
-.flair-federation { @include sprites-sprite(flair-federation); }
-.flair-empire { @include sprites-sprite(flair-empire); }
-.flair-alliance { @include sprites-sprite(flair-alliance); }
-.flair-cog { @include sprites-sprite(flair-cog); }
-.flair-skull { @include sprites-sprite(flair-skull); }
-.flair-frontier { @include sprites-sprite(flair-frontier); text-indent: 40px; }
+.flair-bot { @include sprites-sprite(flair-a-bot); }
+.flair-cog { @include sprites-sprite(flair-a-cog); text-indent: 18px; }
+.flair-frontier { @include sprites-sprite(flair-a-frontier); text-indent: 40px; }
+.flair-snoo { @include sprites-sprite(flair-a-snoo); text-indent: 22px; }
+.flair-star { @include sprites-sprite(flair-a-star); text-indent: 16px; }
 
-.flair-cobra { @include sprites-sprite(flair-ship-cobra); }
-.flair-sidey { @include sprites-sprite(flair-ship-sidey); }
-.flair-viper { @include sprites-sprite(flair-ship-viper); }
-.flair-anaconda { @include sprites-sprite(flair-ship-anaconda); text-indent: 30px; }
+.flair-alliance { @include sprites-sprite(flair-sup-alliance); text-indent: 18px; }
+.flair-empire { @include sprites-sprite(flair-sup-empire); text-indent: 22px; }
+.flair-federation { @include sprites-sprite(flair-sup-federation); text-indent: 18px; }
 
-.flair-naturalpoint { @include sprites-sprite(flair-naturalpoint); text-indent: 21px; }
-.flair-tobii { @include sprites-sprite(flair-tobii); text-indent: 32px; }
-.flair-osvr { @include sprites-sprite(flair-osvr); text-indent: 21px; }
+.flair-aegis { @include sprites-sprite(flair-com-aegis); text-indent: 21px; }
+.flair-coredyn { @include sprites-sprite(flair-com-coredyn); }
+.flair-fdelacy { @include sprites-sprite(flair-com-fdelacy); text-indent: 22px; }
+.flair-galnet { @include sprites-sprite(flair-com-galnet); text-indent: 21px; }
+.flair-zorgpet { @include sprites-sprite(flair-com-zorgpet); text-indent: 18px; }
+
+.flair-combat { @include sprites-sprite(flair-play-combat); text-indent: 23px; }
+.flair-explore { @include sprites-sprite(flair-play-explore); text-indent: 20px; }
+.flair-skull { @include sprites-sprite(flair-play-pirate); text-indent: 22px; }
+.flair-rescue { @include sprites-sprite(flair-play-rescue); text-indent: 18px; }
+.flair-trade { @include sprites-sprite(flair-play-trade); text-indent: 20px; }
+
+.flair-anaconda { @include sprites-sprite(flair-ship-anaconda); text-indent: 32px; }
+.flair-cobra { @include sprites-sprite(flair-ship-cobra); text-indent: 23px; }
+.flair-sidey { @include sprites-sprite(flair-ship-sidey); text-indent: 22px; }
+.flair-thargint { @include sprites-sprite(flair-ship-thargint); text-indent: 18px; }
+.flair-thargsen { @include sprites-sprite(flair-ship-thargsen); text-indent: 33px; }
+.flair-viper { @include sprites-sprite(flair-ship-viper); text-indent: 22px; }
+
+.flair-aduval { @include sprites-sprite(flair-pp-aduval); }
+.flair-alduval { @include sprites-sprite(flair-pp-alduval); }
+.flair-antal { @include sprites-sprite(flair-pp-antal); }
+.flair-delaine { @include sprites-sprite(flair-pp-delaine); }
+.flair-grom { @include sprites-sprite(flair-pp-grom); text-indent: 16px; }
+.flair-hudson { @include sprites-sprite(flair-pp-hudson); text-indent: 21px; }
+.flair-mahon { @include sprites-sprite(flair-pp-mahon); text-indent: 17px; }
+.flair-patreus { @include sprites-sprite(flair-pp-patreus); }
+.flair-torval { @include sprites-sprite(flair-pp-torval); }
+.flair-winters { @include sprites-sprite(flair-pp-winters); }
+.flair-yongrui { @include sprites-sprite(flair-pp-yongrui); }
+
+.flair-hcs { @include sprites-sprite(flair-z-hcs); text-indent: 18px; }
+.flair-osvr { @include sprites-sprite(flair-z-osvr); text-indent: 20px; }
+.flair-naturalpoint { @include sprites-sprite(flair-z-naturalpoint); text-indent: 20px; }
+.flair-tobii { @include sprites-sprite(flair-z-tobii); text-indent: 30px; }
 
 .flair-long {
     text-transform: uppercase;
