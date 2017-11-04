@@ -64,10 +64,19 @@
         background-color: #0a8bd6;
         display: block;
         color: white;
-        padding: 7px 5px;
+        padding: 8px 5px;
         text-align: center;
-        border: 1px solid $horizons_blue;
-	&:hover{
+        &:hover{
+            background-color: darken($horizons_blue, 22);
+        }
+    }
+    a[href$="#button-extra-life"]{
+        background: url(%%extra-life-small%%) #23c1e8 no-repeat;
+        display: block;
+        color: white;
+        padding: 14px 5px;
+        text-align: center;
+        &:hover{
             background-color: darken($horizons_blue, 22);
         }
     }

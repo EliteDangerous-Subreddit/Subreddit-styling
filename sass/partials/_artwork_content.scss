@@ -34,7 +34,7 @@
   input[name=uh][value^="8"] ~ a:after {
     content: url("%%DontBeThatGuy%%");}
   input[name=uh][value^="8"] ~ a:before {
-    content: "Donꞌt Be That Guy, by Mat-2596";}
+    content: "Dont Be That Guy, by Mat-2596";}
   input[name=uh][value^="9"] ~ a:after {
     content: url("%%ChimeraPlanet%%");}
   input[name=uh][value^="9"] ~ a:before {
@@ -120,9 +120,9 @@
   input[name=uh][value^="t"] ~ a:before {
     content: "Take A Morning Flight, by Finding_Anorak";}
   input[name=uh][value^="u"] ~ a:after {
-    content: url("%%TheyreHere%%");}
+    content: url("%%TheyAreHere%%");}
   input[name=uh][value^="u"] ~ a:before {
-    content: "Theyꞌre Here, by CurtisJamesHolt";}
+    content: "Theyre Here, by CurtisJamesHolt";}
   input[name=uh][value^="v"] ~ a:after {
     content: url("%%ThisIsFine%%");}
   input[name=uh][value^="v"] ~ a:before {
@@ -145,7 +145,7 @@
     content: "When The Onionhead Kicks In, by xKroneKx";}
 
   .md [href^="##"] {
-    background-image: url(%%PreviouslyFeatured%%);
+    background-image: url(%%previouslyfeatured%%);
     display: inline-block;
     cursor: default;
     width: 200px;
