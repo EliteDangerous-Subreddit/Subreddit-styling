@@ -7,42 +7,45 @@
     bottom:0;
     left:0;
     background-color:transparent;
-    background-image:url("%%snow%%"),url("%%snow%%");
-    -webkit-animation:snow 15s linear infinite;
-    -moz-animation:snow 15s linear infinite;
-    -ms-animation:snow 15s linear infinite;
-    animation:snow 15s linear infinite;
+    background-image:url("%%snow%%"),url("%%snow%%"),url("%%snow%%");
+    -webkit-animation:snow 20s linear infinite;
+    -moz-animation:snow 20s linear infinite;
+    -ms-animation:snow 20s linear infinite;
+    animation:snow 20s linear infinite;
     pointer-events:none
+}
+#header:not(:hover):before{
+    animation-play-state: paused;
 }
 @-webkit-keyframes snow {
     0% {
-        background-position:0 0,0 0,0 0
+        background-position:0 0,300px 200px,200px 200px
     }
     100% {
-        background-position:500px 1000px,400px 400px,300px 300px
+        background-position:500px 2000px,1300px 1200px,700px 700px
     }
 }
 @-moz-keyframes snow {
     0% {
-        background-position:0 0,0 0,0 0
+        background-position:0 0,300px 200px,200px 200px
     }
     100% {
-        background-position:500px 1000px,400px 400px,300px 300px
+        background-position:500px 2000px,1300px 1200px,700px 700px
     }
 }
 @-ms-keyframes snow {
     0% {
-        background-position:0 0,0 0,0 0
+        background-position:0 0,300px 200px,200px 200px
     }
     100% {
-        background-position:500px 1000px,400px 400px,300px 300px
+        background-position:500px 2000px,1300px 1200px,700px 700px
     }
 }
 @keyframes snow {
     0% {
-        background-position:0 0,0 0,0 0
+        background-position:0 0,300px 200px,200px 200px
     }
     100% {
-        background-position:500px 1000px,400px 400px,300px 300px
+        background-position:500px 2000px,1300px 1200px,700px 700px
     }
 }
