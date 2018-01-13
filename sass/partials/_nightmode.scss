@@ -11,12 +11,12 @@
     ul{
         background: none !important;
     }
-    pre{
+    .thing pre{
         background: #666 !important;
         border: 1px solid #6d6d6d !important;
         &> .code{
             background: none !important;
-        }       
+        }
     }
     code{
         background: #555 !important;
@@ -180,9 +180,9 @@
         }
     }
     .sr-bar a{
-        color: inherit;
+        color: #969696 !important;
         &:hover{
-            color:white;
+            color:white !important;
         }
     }
     .link.promotedlink.promoted{
