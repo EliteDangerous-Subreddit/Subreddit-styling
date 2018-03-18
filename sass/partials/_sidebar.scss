@@ -40,6 +40,7 @@
     }
 }
 .side {
+    @import 'partials/sidebar/events_table';
     @if $sidebar_width != 300px {
         width: $sidebar_width;
     }

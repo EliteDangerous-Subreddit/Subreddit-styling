@@ -1,0 +1,61 @@
+table:nth-of-type(3) {
+    border:1px solid $border_color !important;
+    border-bottom: none !important;
+    margin-top: -5px !important;
+    margin-bottom: 0 !important;
+    tr {
+        position: relative;
+        border-bottom:1px solid $border_color !important;
+        &::before{
+            content:"";
+            position: absolute;
+            width: 2px;
+            background: transparent;
+            height: 100%;
+            left:0;
+        }
+        &:hover::before{
+            transition:150ms;
+            background: $horizons_blue;
+        }
+        &:last-child {
+            border-bottom: none !important;
+        }
+    }
+    td{
+        text-align: left !important;
+        border: 0px !important;
+        &:nth-of-type(1){
+                font-style: italic;
+                margin-bottom: -10px
+        }
+        &:nth-of-type(2){
+            font-size: 1.35em;
+        }
+        &:nth-of-type(3){
+            padding-top: 0;
+            padding-bottom: 10px
+        }
+    }
+    thead{
+        display: none;
+    }
+    tr, td{
+        display: block;
+    }
+}
+table:nth-of-type(3) + blockquote a {
+    box-sizing: border-box;
+    border: 1px solid $border_color;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 10px !important;
+    transition:150ms;
+    &:hover {
+        transition:150ms;
+        background: $horizons_blue;
+        color:white !important;
+        border: 1px solid darken($horizons_blue, 5);
+    }
+}
