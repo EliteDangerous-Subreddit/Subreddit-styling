@@ -23,8 +23,6 @@
     content: url("%%CityscapeDocking%%");}
   input[name=uh][value^="5"] ~ a:before {
     content: "Cityscape Docking, by KevinMassey";}
-  input[name=uh][value^="6"] ~ a:after {
-    content: url("%%ChoosingAPower%%");}
   input[name=uh][value^="6"] ~ a:before {
     content: "Choosing A Power, by ChairmanDoon";}
   input[name=uh][value^="7"] ~ a:after {
