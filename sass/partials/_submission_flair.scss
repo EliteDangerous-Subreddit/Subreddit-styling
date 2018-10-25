@@ -1,14 +1,14 @@
 @if $link_flair_type == right_orange {
 	.title .linkflairlabel {
-		background: none;
+		background: none !important;
 		border: none;
 		float: right;
 		font-size: 12px;
 		color: $main_color;
-		border-bottom: 1px solid $main_color;
+		border-bottom: 1px solid $main_color !important;
 		text-transform: uppercase;
 		text-align: right;
-		width: 200px;
+		width: 120px;
 	}
 }
 @elseif $link_flair_type == overwatch_style {
