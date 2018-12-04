@@ -1,5 +1,7 @@
 *
 !/sass
+!/sass/**
 !/images
+!/images/**
 !config.rb
 !README.md
