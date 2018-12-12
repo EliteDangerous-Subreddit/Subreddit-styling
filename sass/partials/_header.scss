@@ -34,18 +34,17 @@
 	color: lightgrey;
 }
 #header-bottom-left {
-	background: url(%%header%%);
+	background: url(%%header%%) center center;
 	background-size: cover;
 	height: $header_height;
 	padding-top: $header_padding_top;
 }
 .pagename {
 	color: transparent;
-	font-size: 0px;
+	font-size: 0;
 	a {
 		@if $display_elite_image {
-			background: url(%%elite%%);
-			background-repeat: no-repeat;
+			background: url(%%elite%%) no-repeat;
 			color: transparent;
 		}
 		@else {
