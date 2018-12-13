@@ -12,7 +12,8 @@
     -moz-animation:snow 20s linear infinite;
     -ms-animation:snow 20s linear infinite;
     animation:snow 20s linear infinite;
-    pointer-events:none
+    pointer-events:none;
+    background-size: 500px,350px,230px;
 }
 #header:not(:hover):before{
     animation-play-state: paused;
