@@ -60,7 +60,7 @@ $post_type_color: $main_color; // Color of the button
 
 // Artwork
 $display_artwork: true; // Visible in sidebar
-$artwork_type: link; // Choose between: caption, link, random (first h5 html tag in sidebar)
+$artwork_type: random; // Choose between: caption, link, random (first h5 html tag in sidebar)
 $artwork_height: 180px; // Height of the artwork
 $artwork_margin: 7px;
 $artwork_top: $header_total_height + $artwork_margin;
