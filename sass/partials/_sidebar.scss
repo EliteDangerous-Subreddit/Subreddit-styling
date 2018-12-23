@@ -81,6 +81,16 @@
             background-color: darken($horizons_blue, 22);
         }
     }
+    a[href$="#button-squadrons"]{
+        background: url(%%squadrons-small%%) #0a8bd6 no-repeat;
+        display: block;
+        color: white;
+        padding: 14px 5px;
+        text-align: center;
+        &:hover{
+            background-color: darken($horizons_blue, 22);
+        }
+    }
     .md h1 {
         border-bottom: 1px solid $sidebar_header;
         color: $sidebar_header;
