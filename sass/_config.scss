@@ -23,7 +23,8 @@ $header_link_type: original_elite; //Choices: original_elite (TODO: Implement ov
 $header_height: 150px;
 $header_padding_top: 20px;
 $header_total_height: $header_height + $header_padding_top;
-$header_display_image: 54px;
+$header_display_image_height: 54px;
+$header_display_image_width: 384px;
 
 // Flairs
 $link_flair_type: right_orange; // right_orange, overwatch_style, colored_labels

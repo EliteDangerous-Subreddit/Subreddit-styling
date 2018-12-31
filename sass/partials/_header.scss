@@ -57,8 +57,8 @@
 		right: 0;
 		text-align: center;
 		top: $header_height - 90px;
-		height: $header_display_image;
-		width: 303px;
+		height: $header_display_image_height;
+		width: $header_display_image_width;
 		margin: 0 auto;
 		text-transform: uppercase;
 	}
