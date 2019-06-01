@@ -1,6 +1,6 @@
 @mixin rainbow-user($user_name, $focus:false) {
     @if $focus == true {
-        .tagline .author[href$=#{$user_name}]:focus{
+        .tagline .author[href$="#{$user_name}"]:focus{
         	background: transparent repeating-linear-gradient(-45deg,
         		#e40303,
         		#e40303 7px,
@@ -18,7 +18,7 @@
         }
     }
     @else {
-        .tagline .author[href$=#{$user_name}]{
+        .tagline .author[href$="#{$user_name}"]{
         	background: transparent repeating-linear-gradient(-45deg,
         		#e40303,
         		#e40303 7px,
