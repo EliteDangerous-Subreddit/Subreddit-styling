@@ -14,7 +14,8 @@
         		#004dff 34px,
         		#750787 34px,
         		#750787 41px
-        	) repeat scroll 0% 0% !important;
+			) repeat scroll 0% 0% !important;
+			text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.73);
         }
     }
     @else {
@@ -33,6 +34,7 @@
         		#750787 34px,
         		#750787 41px
         	) repeat scroll 0% 0% !important;
+			text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.73);
         }
     }
 
