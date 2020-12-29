@@ -2,7 +2,7 @@
 	height: 16px;
 	display: inline-block;
 	line-height: 16px;
-	&.submitter, &.moderator, &[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"], &[href$="/Bo_Frontier"], &[href$="/adwoodsuk"], &[href$="/PaigeHarvey_Frontier"], &[href$="/WFlanagan_Frontier"], &[href$="/DavStott"], &[href$="/PCrowther_FD"], &[href$="/Chante_Frontier"], &[href$="/Steggs_Frontier"]{
+	&.submitter, &.moderator, &[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"], &[href$="/Bo_Frontier"], &[href$="/adwoodsuk"], &[href$="/PaigeHarvey_Frontier"], &[href$="/WFlanagan_Frontier"], &[href$="/DavStott"], &[href$="/PCrowther_FD"], &[href$="/Chante_Frontier"], &[href$="/Steggs_Frontier"], &[href$="/Zac_Frontier"]{
 		color: #FFF !important;
 		padding: 0px 2px;
 		border-radius: 3px;
@@ -16,7 +16,7 @@
 			background-color: #4E7EAB !important;
 		}
 	}
-	&[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"], &[href$="/Bo_Frontier"], &[href$="/adwoodsuk"], &[href$="/PaigeHarvey_Frontier"], &[href$="/WFlanagan_Frontier"], &[href$="/DavStott"], &[href$="/PCrowther_FD"], &[href$="/Chante_Frontier"], &[href$="/Steggs_Frontier"]{
+	&[href$="/EdwardLewis_Frontier"], &[href$="/BrettC_Frontier"], &[href$="/DavidBraben"], &[href$="/mbrookes"], &[href$="/frontier_support"], &[href$="/ZacAntonaci_Frontier"], &[href$="/MFlorianz_Frontier"], &[href$="/JoeHogan_Frontier"], &[href$="/JimCroft_Frontier"], &[href$="/GaryR_Frontier"], &[href$="/JimS_Frontier"], &[href$="/CraigF_Frontier"], &[href$="/DaleEmasiri_Frontier"], &[href$="/Sandro_Sammarco"], &[href$="/Bo_Frontier"], &[href$="/adwoodsuk"], &[href$="/PaigeHarvey_Frontier"], &[href$="/WFlanagan_Frontier"], &[href$="/DavStott"], &[href$="/PCrowther_FD"], &[href$="/Chante_Frontier"], &[href$="/Steggs_Frontier"], &[href$="/Zac_Frontier"]{
 		background: #DD4848 !important;
 		&:hover{
 			background-color: #A51A1A !important;
@@ -24,25 +24,25 @@
 	}
 }
 
-@include rainbow-user("EdwardLewis_Frontier");
-@include rainbow-user("BrettC_Frontier");
-@include rainbow-user("DavidBraben");
-@include rainbow-user("mbrookes");
-@include rainbow-user("frontier_support");
-@include rainbow-user("ZacAntonaci_Frontier");
-@include rainbow-user("MFlorianz_Frontier");
-@include rainbow-user("JoeHogan_Frontier");
-@include rainbow-user("JimCroft_Frontier");
-@include rainbow-user("GaryR_Frontier");
-@include rainbow-user("JimS_Frontier");
-@include rainbow-user("CraigF_Frontier");
-@include rainbow-user("DaleEmasiri_Frontier");
-@include rainbow-user("Sandro_Sammarco");
-@include rainbow-user("Bo_Frontier");
-@include rainbow-user("adwoodsuk");
-@include rainbow-user("PaigeHarvey_Frontier");
-@include rainbow-user("WFlanagan_Frontier");
-@include rainbow-user("DavStott");
-@include rainbow-user("PCrowther_FD");
-@include rainbow-user("Chante_Frontier");
-@include rainbow-user("Steggs_Frontier");
+// @include rainbow-user("EdwardLewis_Frontier");
+// @include rainbow-user("BrettC_Frontier");
+// @include rainbow-user("DavidBraben");
+// @include rainbow-user("mbrookes");
+// @include rainbow-user("frontier_support");
+// @include rainbow-user("ZacAntonaci_Frontier");
+// @include rainbow-user("MFlorianz_Frontier");
+// @include rainbow-user("JoeHogan_Frontier");
+// @include rainbow-user("JimCroft_Frontier");
+// @include rainbow-user("GaryR_Frontier");
+// @include rainbow-user("JimS_Frontier");
+// @include rainbow-user("CraigF_Frontier");
+// @include rainbow-user("DaleEmasiri_Frontier");
+// @include rainbow-user("Sandro_Sammarco");
+// @include rainbow-user("Bo_Frontier");
+// @include rainbow-user("adwoodsuk");
+// @include rainbow-user("PaigeHarvey_Frontier");
+// @include rainbow-user("WFlanagan_Frontier");
+// @include rainbow-user("DavStott");
+// @include rainbow-user("PCrowther_FD");
+// @include rainbow-user("Chante_Frontier");
+// @include rainbow-user("Steggs_Frontier");
