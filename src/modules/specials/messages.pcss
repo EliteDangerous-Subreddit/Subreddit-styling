@@ -1,0 +1,123 @@
+// Upvote text
+/* Inspired by /r/Sweden */
+.thing .upmod:focus:after {
+    content: "";
+    padding:1px 6px;
+    border-radius: 2px;
+    margin-left:30px;
+    background-color: orange;
+    font-size: 14px;
+    color: white;
+    display: block;
+    position: absolute;
+    animation: upvote 3s ease-out;
+    -webkit-animation: upvote 3s ease-out;
+    opacity: 0;
+    z-index: 9001;
+    font-weight: normal;
+}
+@keyframes upvote {
+    0% { margin-top: 0px; opacity: 1; }
+    50% { opacity: 1; }
+    100% { margin-top: -80px; opacity: 0; }
+}
+@-webkit-keyframes upvote {
+    0% { margin-top: 0px; opacity: 1; }
+    50% { opacity: 1; }
+    100% { margin-top: -80px; opacity: 0; }
+}
+
+.thing[data-fullname$="a"] > .midcol .upmod:focus:after { content: "Guys, Horizons has released!"; }
+.thing[data-fullname$="b"] > .midcol .upmod:focus:after { content: '"Newsletter #91" sure was good'; }
+.thing[data-fullname$="c"] > .midcol .upmod:focus:after { content: "Cutter vs. 10g world. Score: 0-1"; }
+.thing[data-fullname$="d"] > .midcol .upmod:focus:after { content: "Materials, gotta catch 'em all"; }
+.thing[data-fullname$="e"] > .midcol .upmod:focus:after { content: "Bobble wobble"; }
+.thing[data-fullname$="f"] > .midcol .upmod:focus:after { content: "Challenge: Fly into space with an SRV"; }
+.thing[data-fullname$="g"] > .midcol .upmod:focus:after { content: "SRV to spaaace"; }
+.thing[data-fullname$="h"] > .midcol .upmod:focus:after { content: "*DING* You are now free to move about the galaxy"; }
+.thing[data-fullname$="i"] > .midcol .upmod:focus:after { content: "Frontier Expo is haunted by Thargoids"; }
+.thing[data-fullname$="j"] > .midcol .upmod:focus:after { content: "Service status now online"; }
+.thing[data-fullname$="k"] > .midcol .upmod:focus:after { content: "Moozipan's happy Sidewinder approves!"; }
+.thing[data-fullname$="l"] > .midcol .upmod:focus:after { content: "Thargoids are here!"; }
+.thing[data-fullname$="m"] > .midcol .upmod:focus:after { content: "Fly Dangerously CMDRs!"; }
+.thing[data-fullname$="n"] > .midcol .upmod:focus:after { content: "Up for Powerplay? Anyone??"; }
+.thing[data-fullname$="o"] > .midcol .upmod:focus:after { content: "Synthesising FSD boost!"; }
+.thing[data-fullname$="p"] > .midcol .upmod:focus:after { content: "The Newsletter is late"; }
+.thing[data-fullname$="q"] > .midcol .upmod:focus:after { content: "The eye is watching"; }
+.thing[data-fullname$="r"] > .midcol .upmod:focus:after { content: "Why won't the ship come back? This can't be happening."; }
+.thing[data-fullname$="s"] > .midcol .upmod:focus:after { content: "Sock detected"; }
+.thing[data-fullname$="t"] > .midcol .upmod:focus:after { content: "Try Elite in VR, it will blow you away"; }
+.thing[data-fullname$="u"] > .midcol .upmod:focus:after { content: "10 Christmas trees on the dashboard, all bobbing.. good.."; }
+.thing[data-fullname$="v"] > .midcol .upmod:focus:after { content: "Did you hear about the CMDR who went to Sag A* in a Sidewinder?"; }
+.thing[data-fullname$="w"] > .midcol .upmod:focus:after { content: "Eject! Eject!"; }
+.thing[data-fullname$="x"] > .midcol .upmod:focus:after { content: "Ohh, a landable planet? RAMMING SPEED!"; }
+.thing[data-fullname$="y"] > .midcol .upmod:focus:after { content: "Unknown Artefacts transmit data about your ship"; }
+.thing[data-fullname$="z"] > .midcol .upmod:focus:after { content: "Why are the Thargoid scout ships red?!"; }
+.thing[data-fullname$="1"] > .midcol .upmod:focus:after { content: "Braben theme? Soon(tm)"; }
+.thing[data-fullname$="2"] > .midcol .upmod:focus:after { content: "No gameplay on planets? What about buggy racing!"; }
+.thing[data-fullname$="3"] > .midcol .upmod:focus:after { content: "SRV racing, it's a thing"; }
+.thing[data-fullname$="4"] > .midcol .upmod:focus:after { content: "Braben Seal Of Approval"; }
+.thing[data-fullname$="5"] > .midcol .upmod:focus:after { content: "WITNESS ME!"; }
+.thing[data-fullname$="6"] > .midcol .upmod:focus:after { content: "Test post please ignore"; }
+.thing[data-fullname$="7"] > .midcol .upmod:focus:after { content: "Merope, uncover your secrets"; }
+.thing[data-fullname$="8"] > .midcol .upmod:focus:after { content: "Ed is still asleep after 24h stream"; }
+.thing[data-fullname$="9"] > .midcol .upmod:focus:after { content: "Devs still being beaten in Danger Zone"; }
+.thing[data-fullname$="0"] > .midcol .upmod:focus:after { content: "Tiny hardpoints?! Oh.."; }
+
+.thing[data-fullname$="ba"] > .midcol .upmod:focus:after, .thing[data-fullname$="aa"] > .midcol .upmod:focus:after { content: "Under a Tank"; }
+.thing[data-fullname$="bb"] > .midcol .upmod:focus:after, .thing[data-fullname$="ab"] > .midcol .upmod:focus:after { content: "Target shields are fine"; }
+.thing[data-fullname$="bc"] > .midcol .upmod:focus:after, .thing[data-fullname$="ac"] > .midcol .upmod:focus:after { content: "Friendship drive engaged"; }
+.thing[data-fullname$="bd"] > .midcol .upmod:focus:after, .thing[data-fullname$="ad"] > .midcol .upmod:focus:after { content: "Landing gear: attractive"; }
+.thing[data-fullname$="be"] > .midcol .upmod:focus:after, .thing[data-fullname$="ae"] > .midcol .upmod:focus:after { content: "tfaddy ate the socks"; }
+.thing[data-fullname$="bf"] > .midcol .upmod:focus:after, .thing[data-fullname$="af"] > .midcol .upmod:focus:after { content: "Welcome to Elite Dangeorus"; }
+.thing[data-fullname$="bg"] > .midcol .upmod:focus:after, .thing[data-fullname$="ag"] > .midcol .upmod:focus:after { content: "Ed is still asleep after 24h stream"; }
+.thing[data-fullname$="bh"] > .midcol .upmod:focus:after, .thing[data-fullname$="ah"] > .midcol .upmod:focus:after { content: "Unknown Artefacts for everyone!"; }
+.thing[data-fullname$="bi"] > .midcol .upmod:focus:after, .thing[data-fullname$="ai"] > .midcol .upmod:focus:after { content: "Frontier Support is already on it"; }
+.thing[data-fullname$="bj"] > .midcol .upmod:focus:after, .thing[data-fullname$="aj"] > .midcol .upmod:focus:after { content: "The Audio team is still working"; }
+.thing[data-fullname$="bk"] > .midcol .upmod:focus:after, .thing[data-fullname$="ak"] > .midcol .upmod:focus:after { content: "Where is planet coaster?"; }
+.thing[data-fullname$="bl"] > .midcol .upmod:focus:after, .thing[data-fullname$="al"] > .midcol .upmod:focus:after { content: "Good job I've found you, you're a hard one to track down"; }
+.thing[data-fullname$="bm"] > .midcol .upmod:focus:after, .thing[data-fullname$="am"] > .midcol .upmod:focus:after { content: "Jim Croft is the man!"; }
+.thing[data-fullname$="bn"] > .midcol .upmod:focus:after, .thing[data-fullname$="an"] > .midcol .upmod:focus:after { content: "Hi everybody i'm learning how to land"; }
+.thing[data-fullname$="bo"] > .midcol .upmod:focus:after, .thing[data-fullname$="ao"] > .midcol .upmod:focus:after { content: "Soon(tm)"; }
+.thing[data-fullname$="bp"] > .midcol .upmod:focus:after, .thing[data-fullname$="ap"] > .midcol .upmod:focus:after { content: "Oh, the station disappeared"; }
+.thing[data-fullname$="bq"] > .midcol .upmod:focus:after, .thing[data-fullname$="aq"] > .midcol .upmod:focus:after { content: "SERVER STATUS:OK"; }
+.thing[data-fullname$="br"] > .midcol .upmod:focus:after, .thing[data-fullname$="ar"] > .midcol .upmod:focus:after { content: "Fuel Rats can run out of fuel too!"; }
+.thing[data-fullname$="bs"] > .midcol .upmod:focus:after, .thing[data-fullname$="as"] > .midcol .upmod:focus:after { content: "Someone needs help! Go help them in Daily QnA!"; }
+.thing[data-fullname$="bt"] > .midcol .upmod:focus:after, .thing[data-fullname$="at"] > .midcol .upmod:focus:after { content: "BrettC likes to be poked. Go poke him."; }
+.thing[data-fullname$="bu"] > .midcol .upmod:focus:after, .thing[data-fullname$="au"] > .midcol .upmod:focus:after { content: "Ed was once a beautiful rainbow.. No really, it's true!"; }
+.thing[data-fullname$="bv"] > .midcol .upmod:focus:after, .thing[data-fullname$="av"] > .midcol .upmod:focus:after { content: "Fire the Railguns!"; }
+.thing[data-fullname$="bw"] > .midcol .upmod:focus:after, .thing[data-fullname$="aw"] > .midcol .upmod:focus:after { content: "Taking caustic damage"; }
+.thing[data-fullname$="bx"] > .midcol .upmod:focus:after, .thing[data-fullname$="ax"] > .midcol .upmod:focus:after { content: "GalNet News - Your galaxy in focus"; }
+.thing[data-fullname$="by"] > .midcol .upmod:focus:after, .thing[data-fullname$="ay"] > .midcol .upmod:focus:after { content: "Heat levels critical"; }
+.thing[data-fullname$="bz"] > .midcol .upmod:focus:after, .thing[data-fullname$="az"] > .midcol .upmod:focus:after { content: "Did you just un-vote and re-upvote to read this? I do that all the time."; }
+.thing[data-fullname$="b1"] > .midcol .upmod:focus:after, .thing[data-fullname$="a1"] > .midcol .upmod:focus:after { content: "Sponsored by Sidewinder radio"; }
+.thing[data-fullname$="b2"] > .midcol .upmod:focus:after, .thing[data-fullname$="a2"] > .midcol .upmod:focus:after { content: "It's Asp not ASP"; }
+.thing[data-fullname$="b3"] > .midcol .upmod:focus:after, .thing[data-fullname$="a3"] > .midcol .upmod:focus:after { content: "CQC Challenge: Win round by only ramming"; }
+.thing[data-fullname$="b4"] > .midcol .upmod:focus:after, .thing[data-fullname$="a4"] > .midcol .upmod:focus:after { content: "They're called buggehs not SRVs"; }
+.thing[data-fullname$="b5"] > .midcol .upmod:focus:after, .thing[data-fullname$="a5"] > .midcol .upmod:focus:after { content: "shit kits"; }
+.thing[data-fullname$="b6"] > .midcol .upmod:focus:after, .thing[data-fullname$="a6"] > .midcol .upmod:focus:after { content: "Test post please ignore"; }
+.thing[data-fullname$="b7"] > .midcol .upmod:focus:after, .thing[data-fullname$="a7"] > .midcol .upmod:focus:after { content: "Where is Fangs!?"; }
+.thing[data-fullname$="b8"] > .midcol .upmod:focus:after, .thing[data-fullname$="a8"] > .midcol .upmod:focus:after { content: "I found a typo by Frontier again"; }
+.thing[data-fullname$="b9"] > .midcol .upmod:focus:after, .thing[data-fullname$="a9"] > .midcol .upmod:focus:after { content: "Merope, uncover your secrets"; }
+.thing[data-fullname$="b0"] > .midcol .upmod:focus:after, .thing[data-fullname$="a0"] > .midcol .upmod:focus:after { content: "Hutton Orbital has Unknown Artefacts!"; }
+
+.arrow.down:hover::after{
+    position:absolute;
+    display:block;
+    z-index:1000;
+    width:auto;
+    padding:5px;
+    border:0px solid #333;
+    background:#5d3ce9;
+    content:"Don't downvote just because you don't like it!";
+    text-align:center;
+    font-weight:bold;
+    font-size:x-small;
+    color:white;
+    margin-left:30px;
+    margin-top:0px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    -webkit-border-radius:2px
+}
+// End 50k special vote text

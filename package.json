@@ -1,0 +1,26 @@
+{
+  "name": "ed-subreddit-styling",
+  "version": "1.0.0",
+  "description": "Styling for Elite Dangerous subreddit",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.3"
+  },
+  "scripts": {
+    "postcss": "postcss -o style.css src/stylesheet.pcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliteDangerous-Subreddit/Subreddit-styling.git"
+  },
+  "author": "r/EliteDangerous moderation team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EliteDangerous-Subreddit/Subreddit-styling/issues"
+  },
+  "homepage": "https://github.com/EliteDangerous-Subreddit/Subreddit-styling#readme"
+}

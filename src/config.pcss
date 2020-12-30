@@ -1,0 +1,105 @@
+/* Compass settings */
+$sprites-sprite-dimensions: true;
+$nmvotes-sprite-dimensions: true;
+
+/* Spritesheet */
+$enable_nightmode_spritesheet: true;
+
+/* Main colours */
+$horizons_blue: #0a8bd6;
+$elite_orange: #FFA500;
+$main_color: $elite_orange;
+$gray_color: rgba(189,189,189,0.33);
+/* For the h1 tags in sidebar (https://i.imgur.com/usF9iwW.png) */
+$sidebar_header: #EF4040; 
+
+/* [](#yes), [](#no), [](#pass) - As a comment to display green, red or grey "i have voted"-text. Used in /r/EliteCouncil */
+$council_votes: false;
+
+/* Banner & Elite image */
+/* Elite Dangerous Euro-Caps image in middle of banner in /r/EliteDangerous */
+$display_elite_image: true; 
+/* Choices: original_elite (TODO: Implement overwatch_style, second_bar, minimalistic) */
+$header_link_type: original_elite; 
+
+/* Header */
+$header_height: 160px;
+$header_padding_top: 20px;
+$header_total_height: $header_height + $header_padding_top;
+$header_display_image_height: 54px;
+$header_display_image_width: 307px;
+
+/* Flairs */
+/* right_orange, overwatch_style, colored_labels */
+$link_flair_type: right_orange; 
+$default_link_flair_color: #5b93f6;
+/* Submission flair is called "set flair" and is coloured orange */
+$distinguish_set_flair: true; 
+
+/* Submission upvote */
+/* Removes the up- and downvote button when a submission doesn't have a flair set */
+$remove_vote_when_no_flair: true; 
+/* Only removes the upvote if $remove_vote_when_no_flair is enabled */
+$only_remove_upvote: false; 
+
+/* Post listing */
+/* The gap between sponsored, stickied, and normal submissions in post listing */
+$stickied_promotion_post_gap: 7px; 
+$border_color: #e2e2e2;
+
+/* Comments */
+$collapse_on_left:true;
+$collapse_on_left_color:#5b93f6;
+/* old color?: rgba(19, 142, 11, 0.52); */
+$stickied_border_color: rgb(126, 196, 118);
+$stickied_border_color_dark: darken($stickied_border_color, 20);
+
+/* Sidebar */
+/* TODO: Not yet implemented everywhere needed */
+$sidebar_width: 300px; 
+
+/* Message log - The bar visible above submissions. */
+$display_message_log: true;
+
+/* Subscriber name & currently online name */
+$subs_name:"commanders";
+$online_users: "having trouble docking";
+
+/* Submit button */
+/* Choose between: left_simple, centered_stylized */
+$submit_post_type: left_simple; 
+/* Color of the button */
+$post_type_color: $main_color; 
+
+/* Artwork */
+/* Visible in sidebar */
+$display_artwork: true;
+/* Choose between: caption, link, random (first h5 html tag in sidebar)  */
+$artwork_type: random; 
+/* Height of the artwork */
+$artwork_height: 180px;
+$artwork_margin: 7px;
+$artwork_top: $header_total_height + $artwork_margin;
+/* 25px is the gap to the logout button */
+$artwork_to_logout_gap: $artwork_margin + 25px;
+$artwork_caption_vpos: 318px;
+
+/* Frontier Store and Server service status */
+$display_service_status:true;
+
+
+/* Footer */
+/* TODO: Not yet implemented; If true, will use %%footer%% for image */
+/* $footer_image:false; */
+
+/* Subdomains */
+
+/* RES Night Mode */
+$nm_text_color:#BCBCBC;
+$nm_ptext_color:#DBDBDB;
+
+$nm_link_light:#74A5D8;
+$nm_link_visited:#9B7ED2;
+
+$nm_border_color:#212121;
+$nm_bg_color:#313131;

@@ -1,7 +1,1 @@
-*
-!/sass
-!/sass/**
-!/images
-!/images/**
-!config.rb
-!README.md
+node_modules/
